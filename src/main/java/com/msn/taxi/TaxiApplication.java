@@ -1,4 +1,4 @@
-package msn.example.taxi;
+package com.msn.taxi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

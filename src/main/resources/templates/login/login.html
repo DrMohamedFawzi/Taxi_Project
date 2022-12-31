@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="../../static/style/login/login.css" rel="stylesheet" th:href="@{/style/login/login.css}">
+    <title>سجل دخولك </title>
+</head>
+<body>
+<div class="container">
+    <div class="screen">
+        <div class="screen__content">
+            <form class="login" dir="rtl" method="post">
+                <div class="login__field">
+                    <i class="login__icon fas fa-user"></i>
+                    <input class="login__input" name="phone" placeholder="رقم الهاتف" type="tel"/>
+                </div>
+                <div class="login__field">
+                    <i class="login__icon fas fa-lock"></i>
+                    <input class="login__input" name="password" placeholder="كلمة السر" type="password"/>
+                </div>
+                <button class="button login__submit" type="submit">
+                    <span class="button__text">دخول</span>
+                    <i class="button__icon fas fa-chevron-right"></i>
+                </button>
+            </form>
+            <div class="social-login">
+                <h3><a href="/login">إنشاء حساب</a></h3>
+
+                <h3><a href="/signup">نسيت كلمة السر</a></h3>
+                <div class="social-icons">
+                    <a class="social-login__icon fab fa-instagram" href="https://instagram.com/isikabatay06"></a>
+                    <a class="social-login__icon fab fa-facebook" href="#"></a>
+                    <a class="social-login__icon fab fa-twitter" href="https://twitter.com/isikabatay06"></a>
+                </div>
+            </div>
+        </div>
+        <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
