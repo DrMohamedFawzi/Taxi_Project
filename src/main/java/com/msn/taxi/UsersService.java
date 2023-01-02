@@ -2,7 +2,6 @@ package com.msn.taxi;
 
 import com.msn.taxi.entity.User;
 import com.msn.taxi.repo.ClientRepo;
-import com.msn.taxi.repo.CookiesRepo;
 import com.msn.taxi.security.TokenGen;
 import org.springframework.stereotype.Service;
 
@@ -13,11 +12,9 @@ public class UsersService {
 
     private static final int COOKIE_DAYS = 5;
     private final ClientRepo clientRepo;
-    private final CookiesRepo cookiesRepo;
 
-    public UsersService(ClientRepo clientRepo, CookiesRepo cookiesRepo) {
+    public UsersService(ClientRepo clientRepo) {
         this.clientRepo = clientRepo;
-        this.cookiesRepo = cookiesRepo;
     }
 
     public Cookie login(String phone, String password) {
