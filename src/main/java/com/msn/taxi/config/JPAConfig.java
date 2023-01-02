@@ -18,7 +18,7 @@ public class JPAConfig {
         dataSource.setDriverClassName(POSTGRESQL_DRIVER);
         dataSource.setUrl(CONNECTION_URL);
         dataSource.setUsername(USERNAME);
-        dataSource.setPassword(Env.data.get("dbpassword"));
+        dataSource.setPassword(Env.DB_PASSWORD);
 
         return dataSource;
     }

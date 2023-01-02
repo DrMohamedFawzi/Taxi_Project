@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="../../static/style/login/sign_up.css"
+          rel="stylesheet"
+          th:href="@{/style/login/sign_up.css}">
+    <link href="../../static/style/general/fa.all.min.css"
+          rel="stylesheet"
+          th:href="@{/style/general/fa.all.min.css}">
+    <title>أنشئ حسابا</title>
+</head>
+<body dir="rtl">
+<div class="form_wrapper">
+    <div class="form_container">
+        <div class="title_container">
+            <h2>أنشئ حسابك</h2>
+        </div>
+        <div class="row clearfix">
+            <form method="post">
+                <div class="row clearfix">
+                    <div class="col_half">
+                        <div class="input_field"><span><i aria-hidden="true" class="fa fa-user"></i></span>
+                            <input name="lname" placeholder="العائلة" type="text">
+                        </div>
+                    </div>
+                    <div class="col_half">
+                        <div class="input_field"><span><i aria-hidden="true" class="fa fa-user"></i></span>
+                            <input name="fname" placeholder="الإسم" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="input_field"><span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                    <input name="phone" placeholder="الهاتف" type="tel">
+                </div>
+                <div class="input_field"><span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                    <input name="password" placeholder="كلمة السر" type="text">
+                </div>
+
+
+                <!--                    <div class="input_field radio_option">-->
+                <!--                        <input id="rd1" name="radiogroup1" type="radio">-->
+                <!--                        <label for="rd1">Male</label>-->
+                <!--                        <input id="rd2" name="radiogroup1" type="radio">-->
+                <!--                        <label for="rd2">Female</label>-->
+                <!--                    </div>-->
+                <div class="input_field select_option">
+                    <select dir="ltr" name="city">
+                        <option value="city">المدينة</option>
+                        <option value="north">الشمال</option>
+                        <option value="gaza"> غزة</option>
+                        <option value="middle">الوسطى</option>
+                        <option value="khan">خانيونس</option>
+                        <option value="rafah">رفح</option>
+                    </select>
+                    <div class="select_arrow"></div>
+                </div>
+                <div class="input_field checkbox_option">
+                    <input id="cb1" type="checkbox">
+                    <label for="cb1">أوافق على سياسة الإستخدام والخصوصية </label>
+                </div>
+
+                <input class="button" type="submit" value="تسجيل ">
+                <div th:text="${info}"></div>
+                <a href="/login">تسجيل الدخول </a>
+
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

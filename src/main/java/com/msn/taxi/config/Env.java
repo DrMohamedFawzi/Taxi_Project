@@ -1,11 +1,9 @@
 package com.msn.taxi.config;
 
-import java.util.Map;
-
 public class Env {
-    public static Map<String, String> data;
+    public static final String DB_PASSWORD;
 
     static {
-        data = System.getenv();
+        DB_PASSWORD = System.getenv().getOrDefault("dbpassword", "postgres");
     }
 }
