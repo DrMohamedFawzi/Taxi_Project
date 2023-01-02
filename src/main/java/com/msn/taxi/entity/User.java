@@ -2,6 +2,7 @@ package com.msn.taxi.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
 @Entity
 @Table(name = "users")
 @Data
+@NoArgsConstructor
 @SecondaryTable(name = "pwds", pkJoinColumns = @PrimaryKeyJoinColumn(name = "id", referencedColumnName = "phone"))
 public class User {
 

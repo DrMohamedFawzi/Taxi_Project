@@ -21,7 +21,7 @@ public class UsersService {
         User user = clientRepo.findById(phone).orElse(null);
         Cookie cookie = new Cookie(TokenGen.LOG_TOKEN, "end");
         cookie.setMaxAge(-1);
-        cookie.setDomain("/");
+        cookie.setPath("/");
         cookie.setSecure(true);
         if (user != null) {
             if (user.getPassword().equals(password)) {
