@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>طلب تاكسي</title>
+    <link crossorigin="anonymous"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            width: 100%;
+        }
+
+        select.form-control {
+            height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container" style="font-family: cairo,sans-serif">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6  column col-sm-offset-0 col-md-offset-2 col-lg-offset-3">
+            <form class="form-horizontal">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>موقعك</legend>
+                    <!-- Select Basic -->
+                    <div class="form-group" dir="rtl">
+
+                        <div class="col-md-9">
+                            <label class="col-md-3 control-label" for="from">توصيلة من</label>
+
+                            <select class="form-control" id="from" name="from">
+                                <option value="1">لا يوجد موقع</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <legend>توصيلة إلى</legend>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="to">المدينة</label>
+
+                        <div class="col-md-9">
+                            <select class="form-control" id="to" name="to">
+                                <option value="1">Option one</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="to">توصيلة إلى</label>
+
+                        <div class="col-md-9">
+                            <select class="form-control" id="to" name="to">
+                                <option value="1">Option one</option>
+                                <option value="2">Option two</option>
+                                <option value="3">Option three</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="textinput">Text Input</label>
+                        <div class="col-md-3">
+                            <input class="form-control input-md" id="textinput" name="textinput"
+                                   placeholder="placeholder"
+                                   type="text">
+                        </div>
+
+
+                        <!-- Multiple Radios (inline) -->
+
+                        <label class="col-md-3 control-label" for="radios">Inline Radios</label>
+                        <div class="col-md-3">
+                            <label class="radio-inline" for="radios-0">
+                                <input checked="checked" id="radios-0" name="radios" type="radio" value="1">
+                                Yes
+                            </label>
+                            <label class="radio-inline" for="radios-1">
+                                <input id="radios-1" name="radios" type="radio" value="2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="textarea">Text Area</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+                        </div>
+                    </div>
+
+                    <!-- Button (Double) -->
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="button1id"></label>
+                        <div class="col-md-8">
+                            <button class="btn btn-success" id="button1id" name="button1id">Ok</button>
+                            <button class="btn btn-danger" id="button2id" name="button2id">Cancel</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

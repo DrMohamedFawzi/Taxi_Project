@@ -63,7 +63,7 @@ public class UsersService {
             return "رقم الهاتف مستخدم من قبل";
         }
         clientRepo.save(user);
-        return "success";
+        return "تم إنشاء الحساب بنجاح || يرجى تأكيد رقم الجوال";
     }
 
 }
